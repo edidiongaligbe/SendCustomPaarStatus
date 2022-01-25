@@ -1,0 +1,24 @@
+{
+  "name": "sendcustompaarstatus",
+  "version": "1.0.0",
+  "description": "Send Email from Nigerian Custom Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edidiongaligbe/SendCustomPaarStatus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edidiongaligbe/SendCustomPaarStatus/issues"
+  },
+  "homepage": "https://github.com/edidiongaligbe/SendCustomPaarStatus#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "nodemailer": "^6.7.2"
+  }
+}
