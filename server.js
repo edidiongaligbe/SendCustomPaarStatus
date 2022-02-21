@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
   res.send('Hi')
 })
 
-app.post('/api/sendpaar/paar/:paarstatus/email/:email', function (req, res) {
+app.post('/api/sendpaar', function (req, res) {
 
   /* Route path: /users/:userId/books/:bookId
   Request URL: http://localhost:3000/users/34/books/8989 */
@@ -34,9 +34,9 @@ app.post('/api/sendpaar/paar/:paarstatus/email/:email', function (req, res) {
   
     const mailOptions = {
       from: "testingapps@zohomail.com", // sender address
-      to: `${req.params.email}`,
+      to: `${req.body.email}`,
       subject: "PAAR Query Status", // Subject line
-      html: `<p>Hi,</p><p>The status of your PAAR query is <b>${req.params.paarstatus}</b></p>`, // plain text body
+      html: `<p>Hi,</p><p>The status of your PAAR query is <b>${req.body.paarstatus}</b></p>`, // plain text body
     };
   
     transporter.sendMail(mailOptions).then(()=>{
